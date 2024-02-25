@@ -15,85 +15,97 @@ body {
   font-size: 18px;
   background-color: var(--dark-cyan);
   background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
-  background-position: top -40vh left -110vw, bottom -40vh right -110vw;
+  background-position: top -20rem left -20rem, bottom -20rem right -20rem;
   background-repeat: no-repeat, no-repeat;
-  background-size: 40rem, 40rem;
+  background-size: 50rem, 50rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+h1 {
+  font-weight: 700;
+}
+
+.age,
+h2,
+h3 {
+  color: var(--dark-grey);
+  font-weight: 400;
+}
+
+.card-container {
+  background-color: white;
+  text-align: center;
+  font-size: .6rem;
+  border-radius: 1rem;
+  height: 22rem;;
+  flex-basis: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.card-top {
+  background-image: url(./images/bg-pattern-card.svg);
+  border-radius: 1rem 1rem 0 0;
+  flex-basis: 35%;
+}
+
+.card-top img {
+  position: relative;
+  top: 4.4rem;
+  border-radius: 5rem;
+  border-style: solid;
+  border-width: .3rem;
+  border-color: white;
+}
+
+.card-middle {
+  border-bottom: solid 1px gainsboro;
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-middle-child {
+  position: relative;
+  top: 1.5rem;
+  margin: .2rem;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-basis: 25%;
+}
+
+.card-bottom-element-text,
+.card-bottom-element-number {
+  margin: .3rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0.5rem;
+  font-size: 0.8rem;
+  width: 100vw;
+  text-align: center;
+  color: rgb(71, 72, 82);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 @media screen and (max-width: 460px) {
-  h1 {
-    font-weight: 700;
-  }
 
-  .age,
-  h2,
-  h3 {
-    color: var(--dark-grey);
-    font-weight: 400;
-  }
-
-  .card-container {
-    height: 53vh;
-    width: 90vw;
-    background-color: white;
-    text-align: center;
-    font-size: .6rem;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-  }
-
-  .card-top {
-    background-image: url(./images/bg-pattern-card.svg);
-    border-radius: 1rem 1rem 0 0;
-    flex-basis: 35%;
-  }
-
-  .card-top img {
-    position: relative;
-    top: 5.3rem;
-    border-radius: 5rem;
-    border-style: solid;
-    border-width: .3rem;
-    border-color: white;
-  }
-
-  .card-middle {
-    border-bottom: solid 1px gainsboro;
-    display: flex;
-    flex-basis: 40%;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .card-middle-child {
-    position: relative;
-    top: 1.5rem;
-    margin: .2rem;
-  }
-
-  .card-bottom {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-basis: 25%;
-  }
-
-  footer {
-    position: absolute;
-    bottom: 0.5rem;
-    font-size: 0.8rem;
-    width: 100vw;
-    text-align: center;
-    color: rgb(71, 72, 82);
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
+  body {
+    background-position: top -40vh left -110vw, bottom -40vh right -110vw;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 40rem, 40rem;
   }
 }
